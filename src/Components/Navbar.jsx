@@ -50,16 +50,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between px-6 md:px-12">
         <Link to="/">
-          <img
-            src="/logo.png"
-            alt="Restaurant Logo"
-            className="h-12 w-auto"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src =
-                "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='50' viewBox='0 0 150 50'%3E%3Crect width='150' height='50' fill='%23f3f4f6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='14' fill='%236b7280'%3ERestaurant Logo%3C/text%3E%3C/svg%3E";
-            }}
-          />
+          <h1>The Hungry Chef</h1>  
         </Link>
 
         {role === "admin" ? (
