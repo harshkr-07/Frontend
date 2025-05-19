@@ -36,7 +36,7 @@ const Contact = () => {
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch("https://restaurantbackend-zbxj.onrender.com/api/contact", {
+      const response = await fetch("https://backend-h7ew.onrender.com/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
