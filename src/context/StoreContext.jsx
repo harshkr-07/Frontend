@@ -23,7 +23,7 @@ const StoreContextProvider = (props) => {
       try {
         setLoading(true);
         console.log("Fetching menu items...");
-        const response = await fetch("https://restaurantbackend-zbxj.onrender.com/api/items");
+        const response = await fetch("https://backend-h7ew.onrender.com/api/items");
         if (!response.ok) {
           throw new Error(
             `Failed to fetch menu items: ${response.status} ${response.statusText}`
