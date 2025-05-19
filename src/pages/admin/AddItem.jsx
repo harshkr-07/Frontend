@@ -59,7 +59,7 @@ const AddItem = () => {
     data.append("image", selectedFile);
 
     try {
-      const res = await axios.post("https://restaurantbackend-zbxj.onrender.com/api/add-item", data, {
+      const res = await axios.post("https://backend-h7ew.onrender.com/api/add-item", data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
