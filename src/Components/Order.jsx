@@ -95,7 +95,7 @@ const Order = () => {
 
       // Send order to backend
       const response = await axios.post(
-        "https://restaurantbackend-zbxj.onrender.com/api/order",
+        "https://backend-h7ew.onrender.com/api/order",
         orderData
       );
 
