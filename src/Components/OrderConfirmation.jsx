@@ -26,7 +26,7 @@ const OrderConfirmation = () => {
 
         // Fetch order data from backend
         const response = await axios.get(
-          `https://restaurantbackend-zbxj.onrender.com/api/order/id/${orderId}`
+          `https://backend-h7ew.onrender.com/api/order/id/${orderId}`
         );
 
         if (response.data.success) {
