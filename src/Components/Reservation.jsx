@@ -30,7 +30,7 @@ const Reservation = () => {
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch('https://restaurantbackend-zbxj.onrender.com/api/reservations', {
+      const response = await fetch('https://backend-h7ew.onrender.com/api/reservations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
