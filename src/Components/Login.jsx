@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import API from "../api";
+import axios from "axios";
 
 const Login = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -58,10 +58,10 @@ const Login = () => {
     try {
       let res;
       if (isSignup) {
-        res = await API.post("/signup", formData);
+        res = await axios.post("https://backend-h7ew.onrender.com/api/signup", formData);
         setIsSignup(false);
       } else {
-        res = await API.post("/login", formData);
+        res = await axios.post("https://backend-h7ew.onrender.com/api/login", formData);
         if (res?.data?.token) {
           localStorage.setItem("token", res.data.token);
           localStorage.setItem("user", JSON.stringify(res.data.user));
