@@ -23,7 +23,7 @@ const AdminLogin = () => {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("role", "admin");
         navigate("/admin");
-        window.location.reload();
+        // window.location.reload();
       } else {
         setErrorMsg("Invalid email or password");
       }
